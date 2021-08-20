@@ -1,0 +1,11 @@
+# ignore all pdf
+*.pdf
+
+# ignore .a/.o
+*.[oa]
+
+# ignore all swap
+*.swp
+
+# ds_store
+DS
