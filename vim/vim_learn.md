@@ -25,20 +25,16 @@
 1. exclusive : the last character towards the end of the buffer is not included
 2. inclusice : the start and end position of the motion are included in the operation
 
----
 
-* __Chr motions__
+### __Chr motions__
 
 | Motion      | Action                |
-|-------------|-----------------------|
 | h, j, k, l  | left, down, up, right |
 | ctrl + j, k | quick down, up        |
 
----
-* __Word motions__
+### __Word motions__
 
 | Motion | Action                      |
-|--------|-----------------------------|
 | w      | ords |
 | W      | WORDS forward               |
 | b      | words backward              |
@@ -48,11 +44,9 @@
 | ge     | Backward to the end of word |
 | gE     | Backward to the end of WORD |
 
----
-* __Sentence motions__
+### __Sentence motions__
 
 | Motion | Action                                           |
-|--------|--------------------------------------------------|
 | 0      | To the first character of the line               |
 | ^      | To the first non-blank character of the line     |
 | \$     | To the end of the line                           |
@@ -60,12 +54,10 @@
 | -      | lines upward, on the first non-blank character   |
 | enter  | lines downward, on the first non-blank character |
 
----
 
-* __Text target motions__
+### __Text target motions__
 
 | Motion | Action                                   |
-|--------|------------------------------------------|
 | %      | Find the next item and jump to its match |
 | (      | sentences backward                       |
 | )      | sentences forward                        |
@@ -76,12 +68,10 @@
 | \]\[   | sections forward or to the next '}'      |
 | \[\]   | sections backward or to the previous '}' |
 
----
 
-* __Window motions__
+### __Window motions__
 
 | Motion | Action                                                        |
-|--------|---------------------------------------------------------------|
 | ctrl-d | Scroll half window Downwards in the buffer                    |
 | ctrl-u | Scroll half window Upwards in the buffer                      |
 | ctrl-f | Scroll window pages Forwards (downwards) in the buffer        |
@@ -91,13 +81,11 @@
 | M      | To the middle line of window                                  |
 | L      | To the bottom line of window                                  |
 
----
 
-* __Search motions__ 
+### __Search motions__ 
 
 | Motion                | Action                                                                         |
-|-----------------------|--------------------------------------------------------------------------------|
-| *                     | Search forward for the [count]'th occurrence of the word nearest to the cursor |
+| ###                     | Search forward for the [count]'th occurrence of the word nearest to the cursor |
 | #                     | Same as aabove but search backward                                             |
 | {count} f {char}      | To [count]'th occurrence of {char} to the right                                |
 | F                     | Opposite direction of f                                                        |
@@ -108,7 +96,6 @@
 | n                     | Repeat the latest "/" or "?" [count] times                                     |
 | N                     | Repeat the latest "/" or "?" [count] times in opposite direction               |
 
----
 
 
 ## Text object selection <a name='selection'></a>
@@ -116,23 +103,12 @@
 > Only be used while in Visual mode or after an operator  
 > modifiers 'a' and 'i'  differs from mode key
 
----
 
 1. Modifier 
-	1. a ---  around, leading or trailing white space is included, but not counted
-	2. i ---  inside, white space between words is counted
 
 
 2. Text object
-	1. w --- word, a sequence of non-blank characters, move to the start
-	2. W --- same as the w, but move to the end
-	3. s --- sentence, end at punctuation by a space or tab	
-	4. p --- paragraph, after aeach empty line 
-	5. various blocks --- [], {}, (), \<\>, "", ''
 	6. block symbol
-		1. b --- ()
-		2. B --- {}
-		3. t --- tag block, \<tag\> for HTML and XML
 
 * Usage after an operator
 	1. For non-block objects:
@@ -158,7 +134,6 @@
 1. useful before text object selection
 
 | Commands | Feature | Action                                |
-|----------|---------|---------------------------------------|
 | d        | reg     | Delete text that {motion} moves over  |
 | c        | i mode  | Delete {motion} text and start insert |
 | y        | reg     | Yank {motion} text                    |
@@ -172,7 +147,6 @@
 2. only direct to a cursor motion
 
 | Commands | Action |
-|----------|--------|
 |
 
 ## Substitute command in ex mode <a name='substitution'></a>
@@ -210,12 +184,10 @@ to be continued ...
 
 1. open a terminal in a window
 
-
 ```
 :te
 #or
 :terminal
-
 ```
 
 2. open a terminal (shell) on a vim tab
@@ -250,6 +222,5 @@ to be continued ...
 ```
 
 With above, we can map our keys and use the terminal in nvim.
-
 
 ## regex for reading pattern.txt in help <a name='regex'></a>

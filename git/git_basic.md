@@ -121,7 +121,7 @@ Glob patterns are like simplified regex expressions that shell use:
 ### Viewing your Staged and Unstaged Changes ###
 - What have you changed but not yet staged?
 - What have you staged that you are about to commit?  
-For these, **git diff** shows you the exact lines added and removed -- the patech, as it were.
+For these, **git diff** shows you the exact lines added and removed -- the patch, as it were.
 
 **git diff** compare what is in your working derectory with what is in your staging area. The result tells you the changes you've made that you haven't yet staged.
 
@@ -129,8 +129,9 @@ For these, **git diff** shows you the exact lines added and removed -- the patec
 
 ```mermaid
 graph LR
-wf[working flow] --- |git diff| sa[staged area]
-sa --- |git diff --cached/staged| um[unmodified]
+lc[last commit] --- |git diff| sa[staging area]
+sad[staged area] --- |git diff --cached/staged| lc
+sa --> |git commit| sad
 ```
 
 > git difftool
@@ -225,22 +226,25 @@ You improved the former commit which is never happened.
 ```
 $ git remote add <shortname> <url>
 ```
+usually the **origin** serve as the shortname
 
 ### Fetching and Pulling from Your Remotes ###
 To get data from your remote projects, you can run:
 ```
 $ git fetch <remote>
 ```
-
 To get the remote branch merged into your current branch:
 ```
 $ git pull
 ```
-
+> Recommend the *git fetch*, with which you can merge the difference between your codes manually.
 ### Pushing to Your Remotes ###
-
 ```
 $ git push <remote> <branch>
+```
+- If the very first time to push the code, you are supposed to rewrite as:
+```
+$ git push -u <remote> <branch>
 ```
 
 ### Inspecting a Remote ###
