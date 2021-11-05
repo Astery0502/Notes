@@ -237,6 +237,12 @@ To get the remote branch merged into your current branch:
 ```
 $ git pull
 ```
+
+To get a private repo from github, take this form:
+```bash
+git clone git@github.com:username/repo.git
+```
+as the **git://** URLs are read only 
 > Recommend the *git fetch*, with which you can merge the difference between your codes manually.
 ### Pushing to Your Remotes ###
 ```
@@ -252,5 +258,4 @@ See more information about a particuler remote:
 ```
 $ git remote show <remote>
 ```
-
 

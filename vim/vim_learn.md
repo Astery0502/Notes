@@ -29,24 +29,27 @@
 ### __Chr motions__
 
 | Motion      | Action                |
+|-------------|-----------------------|
 | h, j, k, l  | left, down, up, right |
 | ctrl + j, k | quick down, up        |
 
 ### __Word motions__
 
 | Motion | Action                      |
-| w      | ords |
-| W      | WORDS forward               |
-| b      | words backward              |
-| B      | WORDS backward              |
-| e      | Forward to the end of word  |
-| E      | Forward to the end of WORD  |
-| ge     | Backward to the end of word |
-| gE     | Backward to the end of WORD |
+|--------|-----------------------------|
+| w  | ords                        |
+| W  | WORDS forward               |
+| b  | words backward              |
+| B  | WORDS backward              |
+| e  | Forward to the end of word  |
+| E  | Forward to the end of WORD  |
+| ge | Backward to the end of word |
+| gE | Backward to the end of WORD |
 
 ### __Sentence motions__
 
 | Motion | Action                                           |
+|--------|--------------------------------------------------|
 | 0      | To the first character of the line               |
 | ^      | To the first non-blank character of the line     |
 | \$     | To the end of the line                           |
@@ -58,6 +61,7 @@
 ### __Text target motions__
 
 | Motion | Action                                   |
+|--------|------------------------------------------|
 | %      | Find the next item and jump to its match |
 | (      | sentences backward                       |
 | )      | sentences forward                        |
@@ -72,6 +76,7 @@
 ### __Window motions__
 
 | Motion | Action                                                        |
+|--------|---------------------------------------------------------------|
 | ctrl-d | Scroll half window Downwards in the buffer                    |
 | ctrl-u | Scroll half window Upwards in the buffer                      |
 | ctrl-f | Scroll window pages Forwards (downwards) in the buffer        |
@@ -85,7 +90,8 @@
 ### __Search motions__ 
 
 | Motion                | Action                                                                         |
-| ###                     | Search forward for the [count]'th occurrence of the word nearest to the cursor |
+|-----------------------|--------------------------------------------------------------------------------|
+| ###                   | Search forward for the [count]'th occurrence of the word nearest to the cursor |
 | #                     | Same as aabove but search backward                                             |
 | {count} f {char}      | To [count]'th occurrence of {char} to the right                                |
 | F                     | Opposite direction of f                                                        |
