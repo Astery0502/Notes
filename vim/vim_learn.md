@@ -37,14 +37,14 @@
 
 | Motion | Action                      |
 |--------|-----------------------------|
-| w  | ords                        |
-| W  | WORDS forward               |
-| b  | words backward              |
-| B  | WORDS backward              |
-| e  | Forward to the end of word  |
-| E  | Forward to the end of WORD  |
-| ge | Backward to the end of word |
-| gE | Backward to the end of WORD |
+| w      | ords                        |
+| W      | WORDS forward               |
+| b      | words backward              |
+| B      | WORDS backward              |
+| e      | Forward to the end of word  |
+| E      | Forward to the end of WORD  |
+| ge     | Backward to the end of word |
+| gE     | Backward to the end of WORD |
 
 ### __Sentence motions__
 
@@ -140,6 +140,7 @@
 1. useful before text object selection
 
 | Commands | Feature | Action                                |
+|----------|---------|---------------------------------------|
 | d        | reg     | Delete text that {motion} moves over  |
 | c        | i mode  | Delete {motion} text and start insert |
 | y        | reg     | Yank {motion} text                    |

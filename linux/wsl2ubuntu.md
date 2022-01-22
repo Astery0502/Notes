@@ -55,3 +55,6 @@ ranger --copy-config=all
 3. update js to newest from web: using n( sudo npm install -g n)
 4. sudo n stable
 
+# tencent cloud ubuntu
+
+
